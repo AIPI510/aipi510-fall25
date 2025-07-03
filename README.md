@@ -1,3 +1,5 @@
+# Week 4 Branch - Data Exploration
+
 # AIPI 510: Data Sourcing & Analytics (Fall 2025)
 
 This is the accompanying GitHub to the Fall 2025 section of AIPI 510, taught by Dr. Brinnae Bent. 
