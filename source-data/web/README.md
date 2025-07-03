@@ -1,20 +1,26 @@
-# AIPI 510: Data Sourcing & Analytics (Fall 2025)
+# STATION 1: Web Scraping
 
-This is the accompanying GitHub to the Fall 2025 section of AIPI 510, taught by Dr. Brinnae Bent. 
+## Objective:
+Scrape tabular data from a webpage using requests and BeautifulSoup (or optionally pandas.read_html).
+###Example Targets:
+- https://www.basketball-reference.com/leagues/NBA_2024_totals.html
+- https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)
 
-## Course Description
-Course introduces students to the technical and non-technical aspects of collecting, cleaning and preparing data for use in machine learning applications. Technical aspects covered will include the types of data, methods of sourcing data via the web, APIs and from domain-specific sensors and hardware, an increasingly common source of analytics data in technical industries. The course also introduces methods and tools for evaluating the quality of data, performing basic exploratory data analysis, and pre-processing data for use in analytics. Non-technical aspects covered include an introduction to data privacy, GDPR, regulatory issues, bias and industry-specific concerns regarding data usage.
 
-## Installation
+## Step-by-step:
+1. Clone the class repo and branch off of the branch week2-sourcedata (only do once, at your first station) 
+2. Create a new branch yourname-week2 (only do once, at your first station)
+3. Create a new file named yourname.py in scrape/ 
+4. Import the libraries:
+```
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+```
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/AIPI510/aipi510-fall25.git
-   cd aipi510-fall25
-   ```
-
-2. Recommended: Use a virtual environment, using venv or conda. 
-
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
+5. Use requests.get(url) to download HTML from your selected page.
+6. Use BeautifulSoup to find the desired <table> and parse it into a DataFrame.
+7. Clean the data (e.g., drop rows with missing values or headers repeated in the table).
+8. Print the first 5 rows.
+9. Add 3–5 lines of notes at the bottom of the script describing your data and how you might use it.
+10. Commit
