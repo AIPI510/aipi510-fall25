@@ -5,8 +5,10 @@ import pandas as pd
 
 def run():
     # Get the list of largest companies in the United States by revenue by reading the wikipedia page
-    response = requests.get("https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue",
-        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"})
+    response = requests.get(
+        "https://en.wikipedia.org/wiki/List_of_largest_companies_in_the_United_States_by_revenue",
+        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"} # simulate browser request
+    )
 
     # Read and process the html
     tables = pd.read_html(response.text)
@@ -23,12 +25,9 @@ def run():
     print("API Response Info:")
     print(df.info())
     print()
-
     print("Summary:")
     print(df.describe(include='all'))
     print()
-
-    # Data types
     print("Data Types:")
     print(df.dtypes)
 

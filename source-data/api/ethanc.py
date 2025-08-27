@@ -20,12 +20,9 @@ def run():
     print("API Response Info:")
     print(df.info())
     print()
-
     print("Summary:")
     print(df.describe(include='all'))
     print()
-
-    # Data types
     print("Data Types:")
     print(df.dtypes)
 
