@@ -6,3 +6,5 @@ seaborn==0.13.2
 chromadb==0.6.1
 gradio==5.1.0
 sentence-transformers==3.3.0
+beautifulsoup4==4.15.5
+lxml==6.0.1
