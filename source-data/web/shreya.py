@@ -11,5 +11,5 @@ df.dropna(inplace=True)
 #cleaned the data by dropping the rows with missing values
 df.sort_values(by="PTS", ascending=False, inplace=True)
 print(df.head(5))
-#sorted the data by points and selected the top 10 players
+#sorted the data by points and printed the top 5 players
 
