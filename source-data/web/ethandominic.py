@@ -9,6 +9,7 @@ html_data = requests.get("https://www.timeanddate.com/holidays/us/")
 df = pd.read_html(str(html_data.text))
 
 print(df)
+print(df.head())
 
 """
 Notes: My data consists US holiday dates along with states that observe them on the corresponding 
