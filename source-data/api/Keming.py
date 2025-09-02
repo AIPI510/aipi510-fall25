@@ -29,7 +29,7 @@ print(df.head())
 # 3  Two reasons I don't give money to homeless peo...
 # 4  This morning I accidentally made my coffee wit...
 
-##### Annotations
+###### Annotations
 # This script fetches jokes from the JokeAPI and organizes them into a structured format.
 # It handles both single-line and two-part jokes, storing them in a pandas DataFrame.
 # The first five jokes are displayed for quick preview, making it easy to inspect the data.
