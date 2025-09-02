@@ -32,3 +32,4 @@ for row in table.find_all('tr'):
 df = pd.DataFrame(rows_data)
 df.columns = headers
 print(df.info(), df.describe())
+df.to_csv("alex_nba_data.csv")
