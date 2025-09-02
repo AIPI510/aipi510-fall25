@@ -10,7 +10,7 @@ data = json.loads(response.text)
 df = pd.json_normalize(data["jokes"])
 print(f"Safe and Unsafe jokes - {df.shape}")
 df_safe = df[df["safe"]]
-print(f"Safe and Unsafe jokes - {df_safe.shape}")
+print(f"Safe jokes ONLY - {df_safe.shape}")
 print(df_safe.head())
 
 """
