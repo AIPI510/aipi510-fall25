@@ -32,3 +32,8 @@ ser.close()
 
 df = pd.DataFrame(arduino_dict)
 print(df)
+
+#This was the arudino task. I essentially read in the data and asked chatgpt what the data actualy represented by putting in the exact board.
+#I found the variables that the data represented and created a dictionary where the keys are the variables and the values are empty lists
+#I then put in the information from the ten lines into these lists and crated a dataframe from the dictionary at the end
+
