@@ -20,7 +20,7 @@ for i in range(10): # Read 10 lines
     lines.append(line)
 
 # Save to DataFrame
-data_df = pd.DataFrame(lines)
+
 
 # Print the first 5 rows
 print(data_df.head())
