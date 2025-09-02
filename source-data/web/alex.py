@@ -33,3 +33,5 @@ df = pd.DataFrame(rows_data)
 df.columns = headers
 print(df.info(), df.describe())
 df.to_csv("alex_nba_data.csv")
+
+# I could use this data for sports related tasks like the prediction of future champions

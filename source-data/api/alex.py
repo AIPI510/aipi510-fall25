@@ -24,3 +24,5 @@ neo0 = pd.DataFrame(df['close_approach_data'][0])
 neo1 = pd.DataFrame(df['orbital_data'][0])
 neo0.to_csv('alex_close_approach_data.csv')
 print(neo0, neo1)
+
+# I could use near orbit data to learn more about future orbits and trajectory through mathematics.
