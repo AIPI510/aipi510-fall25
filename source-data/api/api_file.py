@@ -23,3 +23,5 @@ print(df)
 #essentially what this code does is it retreives random jokes from the joke api, converts the json response into a python dictionary,
 #prints the response in a way that its just the setup followed by the punchline
 #and then also stores the 5 jokes we retrieve in a dataframe with type, setup, punchline, and ID
+
+
