@@ -10,6 +10,7 @@ for i in range(10):
     lines.append(line)
 # Create a DataFrame with one column 'line' and each row as a line read
 data = pd.DataFrame({'line': lines})
+#The above code snippet was generated using Copilot, an AI coding assistant
+
 print(data)
 ser.close()
-
