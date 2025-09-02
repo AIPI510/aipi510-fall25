@@ -20,5 +20,5 @@ df = pd.DataFrame(data, columns= [
     "mic_rms"
 ])
 df.dropna(inplace=True)
-print(df.head())
+print(df.head(5))
 ser.close()
