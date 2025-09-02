@@ -9,3 +9,4 @@ __pycache__/
 
 # Virtual env
 venv/
+.vscode/
