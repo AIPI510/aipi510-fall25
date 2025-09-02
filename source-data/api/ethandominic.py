@@ -5,7 +5,7 @@ import pandas as pd
 # Chosen API: JokeAPI
 
 # Make a GET request
-response = requests.get("https://v2.jokeapi.dev/joke/Any?type=single")
+response = requests.get("https://v2.jokeapi.dev/joke/Any")
 raw_data = response.json()
 
 # Parse the JSON response
