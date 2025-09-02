@@ -18,4 +18,8 @@ if html_content.status_code == 200:
 else:
     print("Failed to retrieve the webpage")
 
+'''
+My data gets the NBA totals for the 2024 games and then filters the games based on the awards and extracts games which have won awards. I would essentially use this data to do a predictive analysis of which games tend to win awards.
+'''
+
 
