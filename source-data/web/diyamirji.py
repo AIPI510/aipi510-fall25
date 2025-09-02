@@ -12,12 +12,5 @@ soup = BeautifulSoup(response.text, 'html.parser')
 
 table = soup.find("table", {"id": "totals_stats"})
 
-'''table = None
-for c in comments:
-    comment_soup = BeautifulSoup(c, "html.parser")
-    table = comment_soup.find("table", {"id": "totals_stats"})
-    if table:
-        break
-'''
 df = pd.read_html(str(table))[0]
 df.head()
