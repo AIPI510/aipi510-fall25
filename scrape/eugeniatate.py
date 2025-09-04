@@ -15,7 +15,7 @@ def scrape_wta_rankings_data():
     The dataframe is being returned by the method to further process data contained in it.  
     
     Parameters: none 
-    
+  
     Returns: 
     df - pandas DataFrame 
     """
@@ -41,7 +41,7 @@ def scrape_wta_rankings_data():
 if __name__ == "__main__":
     df = scrape_wta_rankings_data()
     print("Top 5 rows:")
-    print(df.head())
+    print(df.head(5))
 
 # Notes:
 # This dataset contains the history of #1 ranked female singles tennis players,
