@@ -1,26 +1,24 @@
 import os
 import requests
-import json
 import pandas as pd
 from dotenv import load_dotenv
 
-
-# load api key from env file
+# Load API key from .env
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
-url = ('https://newsapi.org/v2/top-headlines?'
-       'country=us&'
-       f'apiKey={API_KEY}')
+# Build URL for US headlines
+url = f"https://newsapi.org/v2/top-headlines?country=us&apiKey={API_KEY}"
 response = requests.get(url)
 
-# parse json and store in pd dataframe
-data = response.json()
-df = pd.json_normalize(data['articles'])[['title', 'description', 'url', 'publishedAt', 'source.name']]
+# Handle response
+if response.status_code == 200:
+    data = response.json()
+    df = pd.json_normalize(data['articles'])[['title', 'description', 'url', 'publishedAt', 'source.name']]
+    print(df.head(5))
+else:
+    print(f"Error: {response.status_code}")
 
-#print first 5 rows
-print(df.head(5))
-
-# This is filtering Title, Description, URL, PublishedAt, Source Name.
-# Could be used for quick updates on the most recent news.
-# E.g. push the 5 most recent articles to users
+# This script fetches US top headlines via NewsAPI into a DataFrame.
+# It uses .env for API key security and selects key article fields.
+# Output previews first 5 articles, suitable for news alerts or feeds.
