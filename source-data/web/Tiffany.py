@@ -2,16 +2,19 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-url = "https://books.toscrape.com/"
+url = "https://newschateau.com/a-look-into-elis-mixology/"
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
-data = []
-
-for item in soup.find_all('article', class_='product_pod'):
-    title = item.h3.a['title']
-    price = item.find('p', class_='price_color').text
-    data.append({'title': title, 'price': price})
-
-df = pd.DataFrame(data)
-print(df)
+data=[]
+# Find the main content div
+content_div = soup.find('div', class_='entry-content clear')
+if content_div:
+    paragraphs = content_div.find_all('p')
+    for p in paragraphs:
+        print(p.get_text())
+        data.append({'interview': p.get_text()})
+    df = pd.DataFrame(data)
+    print(df)
+else:
+    print("Content not found.")

@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# But don't ignore these folders (whitelist)
+!source-data/
+!source-data/api/
+!source-data/api/Tiffany.py
+!source-data/arduino/
+!source-data/arduino/Tiffany.py
+!source-data/web/
+!source-data/web/Tiffany.py
+
+# Optional: Don’t ignore gitignore itself
+!.gitignore
