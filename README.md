@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Week 4 Branch - Data Exploration
 
 # AIPI 510: Data Sourcing & Analytics (Fall 2025)
@@ -20,3 +21,16 @@ Course introduces students to the technical and non-technical aspects of collect
 3. Install the required dependencies:
    ```
    pip install -r requirements.txt
+=======
+# Data Exploration Challenge
+
+- Understand your data - what do the features mean? (May have to do some info gathering)
+- Document data context and data sampling in markdown
+- Explore and interpret data structure, descriptive statistics, data quality, and variable relationships
+- Explore data visually with appropriate visualizations
+- Discuss and implement strategies for Handling Missing Values, Removing Duplicates, and Handling Outliers 
+- Perform data transformation as appropriate
+- Create at least one new feature and document your approach
+- Include a discussion around data quality assessment, including data profiling, data completeness, data accuracy, data consistency, data integrity, and data lineage and provenance
+- **IMPORTANT: provide rationale for choices**
+>>>>>>> 97b4800 (Finish data exploration of blood_pressure.csv)
