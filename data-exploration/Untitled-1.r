@@ -1,0 +1,8 @@
+data_bp = pd.read_csv('COVID_data/blood_pressure.csv')
+data_hr = pd.read_csv('COVID_data/heart_rate.csv')
+data_hrv_measure = pd.read_csv('COVID_data/hrv_measurements.csv')
+data_survey = pd.read_csv('COVID_data/surveys.csv')
+data_sleep = pd.read_csv('COVID_data/sleep.csv')
+data_participants = pd.read_csv('COVID_data/participants.csv')
+data_scales = pd.read_csv('COVID_data/scales_description.csv')
+data_wearables = pd.read_csv('COVID_data/wearables.csv')
